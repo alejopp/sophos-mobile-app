@@ -124,10 +124,8 @@ class SeeDocumentsFragment : Fragment() {
         }
         seeDocumentsViewModel.imageBitmap.observe(viewLifecycleOwner) { imageBitmap ->
             if (imageBitmap != null){
-                println(imageBitmap)
                 binding.ivViwDocumentsAttached.setImageBitmap(imageBitmap)
             } else{
-                println(imageBitmap)
                 binding.ivViwDocumentsAttached.setImageResource(R.drawable.ic_baseline_broken_image_24)
             }
         }
@@ -150,7 +148,6 @@ class SeeDocumentsFragment : Fragment() {
         }
         lifecycleScope.launch(Dispatchers.IO) {
             userDataStore.getDataStorePreferences().collect { userPreferences ->
-                println(userPreferences.darkMode)
                 if (!userPreferences.darkMode) {
                     withContext(Dispatchers.Main) {
                         popupBinding.actionMode.text = getString(R.string.night_mode)

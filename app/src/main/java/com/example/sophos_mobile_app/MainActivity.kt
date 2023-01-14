@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        println("POKEEEEEEEEEEEEEEMON M ACTIVITY")
         setContentView(R.layout.activity_main)
     }
 

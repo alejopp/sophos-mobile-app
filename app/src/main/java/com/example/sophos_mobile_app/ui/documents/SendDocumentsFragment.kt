@@ -262,7 +262,6 @@ class SendDocumentsFragment : Fragment() {
         }
         lifecycleScope.launch(Dispatchers.IO) {
             userDataStore.getDataStorePreferences().collect { userPreferences ->
-                println(userPreferences.darkMode)
                 if (!userPreferences.darkMode) {
                     withContext(Dispatchers.Main) {
                         popupBinding.actionMode.text = getString(R.string.night_mode)
@@ -299,7 +298,6 @@ class SendDocumentsFragment : Fragment() {
         lifecycleScope.launch(Dispatchers.IO) {
             userDataStore.getDataStorePreferences().collect { userPreferences ->
                 withContext(Dispatchers.Main) {
-                    println(userPreferences.email)
                     val action =
                         SendDocumentsFragmentDirections.actionSendDocumentsFragmentDestinationToViewDocumentsFragmentDestination(
                             userPreferences.email

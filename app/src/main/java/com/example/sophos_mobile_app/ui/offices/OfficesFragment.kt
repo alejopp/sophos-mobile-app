@@ -166,7 +166,6 @@ class OfficesFragment : Fragment() {
         }
         lifecycleScope.launch(Dispatchers.IO) {
             userDataStore.getDataStorePreferences().collect { userPreferences ->
-                println(userPreferences.darkMode)
                 if (!userPreferences.darkMode) {
                     withContext(Dispatchers.Main) {
                         popupBinding.actionMode.text = getString(R.string.night_mode)

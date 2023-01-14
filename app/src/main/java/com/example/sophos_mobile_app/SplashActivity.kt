@@ -28,10 +28,8 @@ class SplashActivity : AppCompatActivity() {
                 if (userPreferences.darkMode) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                     delegate.applyDayNight()
-                    println("POKEEEEEEEEEEEEEEMON splash dark")
                     startActivity(intent).also { finish() }
                 } else {
-                    println("POKEEEEEEEEEEEEEEMON splash day")
                     startActivity(intent).also { finish() }
                 }
             }

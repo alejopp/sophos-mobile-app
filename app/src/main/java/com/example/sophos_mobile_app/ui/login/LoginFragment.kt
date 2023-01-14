@@ -89,7 +89,6 @@ class LoginFragment : Fragment() {
 
     private fun observeViewModel() {
         loginViewModel.user.observe(viewLifecycleOwner) { user ->
-            print("User after login $user")
             val userEmail = binding.etvLoginEmail.text.toString()
             val userPassword = binding.etvLoginPassword.text.toString()
             if (user?.access == true) {
@@ -159,17 +158,14 @@ class LoginFragment : Fragment() {
                     lifecycleScope.launch(Dispatchers.IO) {
                         userDataStore.getDataStorePreferences().collect { userPreferences ->
                             if (!userPreferences.biometricIntention) {
-                                println("bi false to true $userPreferences")
                                 userDataStore.setBiometricIntention()
                             }
                             if (userPreferences.biometricEmail.isEmpty()) {
                                 withContext(Dispatchers.Main) {
-                                    println("be empty $userPreferences")
                                     showInfoMessage(getString(R.string.auth_with_password_first))
                                 }
                             } else {
                                 userDataStore.getDataStorePreferences().collect { userPreferences ->
-                                    println("can enter $userPreferences")
                                     loginViewModel.login(
                                         userPreferences.biometricEmail,
                                         userPreferences.biometricPassword
