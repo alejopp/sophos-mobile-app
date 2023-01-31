@@ -67,6 +67,7 @@
     <string name="image_uploaded">Image uploaded</string>
     <string name="no_image_attached">No image attached</string>
     <string name="invalid_email_or_password">Wrong email or password</string>
+    <string name="document_image">Document image</string>
 
     <string-array name="doc_type">
         <item>Doc type</item>

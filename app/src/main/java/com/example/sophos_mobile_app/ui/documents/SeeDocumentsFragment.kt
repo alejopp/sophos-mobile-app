@@ -1,6 +1,7 @@
 package com.example.sophos_mobile_app.ui.documents
 
 import android.Manifest
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -107,11 +108,9 @@ class SeeDocumentsFragment : Fragment() {
                 }
                 is ResponseStatus.Loading -> {
                     binding.pbSeeDocsImage.visibility = View.VISIBLE
-                    binding.ivViwDocumentsAttached.visibility = View.INVISIBLE
                 }
                 is ResponseStatus.Success -> {
                     binding.pbSeeDocsImage.visibility = View.GONE
-                    binding.ivViwDocumentsAttached.visibility = View.VISIBLE
                 }
             }
         }
@@ -124,9 +123,11 @@ class SeeDocumentsFragment : Fragment() {
         }
         seeDocumentsViewModel.imageBitmap.observe(viewLifecycleOwner) { imageBitmap ->
             if (imageBitmap != null){
-                binding.ivViwDocumentsAttached.setImageBitmap(imageBitmap)
+                //binding.ivViwDocumentsAttached.setImageBitmap(imageBitmap)
+                ShowDocumentImageDialog(imageBitmap).show(parentFragmentManager, ShowDocumentImageDialog.TAG_SHOW_DOCUMENT_IMAGE)
             } else{
-                binding.ivViwDocumentsAttached.setImageResource(R.drawable.ic_baseline_broken_image_24)
+                //binding.ivViwDocumentsAttached.setImageResource(R.drawable.ic_baseline_broken_image_24)
+                ShowDocumentImageDialog(null).show(parentFragmentManager, ShowDocumentImageDialog.TAG_SHOW_DOCUMENT_IMAGE)
             }
         }
     }

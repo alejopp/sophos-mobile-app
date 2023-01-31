@@ -68,6 +68,8 @@
     <string name="image_uploaded">Imagen adjuntada</string>
     <string name="no_image_attached">Ninguna imagen adjuntada</string>
     <string name="invalid_email_or_password">Email o contraseña incorreta</string>
+    <string name="document_image">Imagend del documento</string>
+
 
     <string-array name="doc_type">
         <item>Tipo de ducumento</item>

@@ -44,7 +44,6 @@ class SeeDocumentsViewModelTest {
         val fakeDocumentRepository = FakeDocumentRepository()
         imageConverter = ImageConverterImpl()
         seeDocumentViewModel = SeeDocumentsViewModel(fakeDocumentRepository, imageConverter)
-
     }
 
     @Test

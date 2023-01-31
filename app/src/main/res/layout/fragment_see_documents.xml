@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@id/iv_viw_documents_attached"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/rv_view_documents"
-        app:layout_constraintTop_toTopOf="@id/iv_viw_documents_attached"  />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
 
     <ProgressBar
         android:id="@+id/pb_see_docs_image"
@@ -23,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_viw_documents_attached"
-        app:layout_constraintEnd_toEndOf="@+id/iv_viw_documents_attached"
-        app:layout_constraintStart_toStartOf="@+id/iv_viw_documents_attached"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_view_document_screen_docs" />
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -64,22 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_view_documents_screen" />
 
-    <ImageView
-        android:id="@+id/iv_viw_documents_attached"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:visibility="invisible"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/rv_view_documents"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_view_document_screen_docs"
-        tools:src="@tools:sample/avatars" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_view_documents"
         android:layout_width="0dp"
@@ -89,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hgl_view_documents_screen_40"
+        app:layout_constraintTop_toBottomOf="@id/tv_view_document_screen_docs"
         app:layout_constraintVertical_bias="0.50"
         tools:listitem="@layout/item_document_detail" />
 
@@ -102,11 +86,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rv_view_documents" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/hgl_view_documents_screen_40"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
