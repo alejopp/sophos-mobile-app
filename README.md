@@ -22,4 +22,4 @@ Sophos app is an app that allow users upload documentation required by the compa
 <img src="screenshoots_light/login_screen.png" width="200" height="400"/> <img src="screenshoots_light/menu_screen.png" width="200" height="400"/> <img src="screenshoots_light/send_docs_screen.png" width="200" height="400"/> <img src="screenshoots_light/view_image_screen.png" width="200" height="400"/>
 
 ## Screenshoots (dark mode)
-<img src="screenshoots_dark/login_screen.png" width="200" height="400"/> <img src="screenshoots_dark/menu_screen.png" width="200" height="400"/> <img src="screenshoots_dark/send_docs_screen.png" width="200" height="400"/> <img src="screenshoots_dark/view_image_screen.png" width="200" height="400"/>
+<img src="screenshoots_dark/login_screen.png" width="200" height="400"/> <img src="screenshoots_dark/menu_screen.png" width="200" height="400"/> <img src="screenshoots_dark/offices_screen.png" width="200" height="400"/> <img src="screenshoots_dark/view_docs_screen.png" width="200" height="400"/>
