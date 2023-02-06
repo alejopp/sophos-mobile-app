@@ -47,12 +47,15 @@ class SeeDocumentsFragment : Fragment() {
     private lateinit var popupWindow: PopupWindow
     private val seeDocumentsViewModel: SeeDocumentsViewModel by viewModels()
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSeeDocumentsBinding.inflate(inflater, container, false)
         userDataStore = UserDataStore(requireContext())
+
         return binding.root
     }
 
