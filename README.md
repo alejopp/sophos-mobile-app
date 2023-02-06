@@ -1,6 +1,6 @@
 # Sophos Mobile App
 
-##Description
+## Description
 Sophos app is an app that allow users upload documentation required by the company to a webserver. The user will be able to see all documents it has uploaded previously.
 
 ## What can you do?
@@ -18,3 +18,8 @@ Sophos app is an app that allow users upload documentation required by the compa
 ## Programming language
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg" width="70" height="70"/>
 
+## Screenshoots (light mode)
+<img src="screenshoots_light/login_screen.png" width="200" height="400"/> <img src="screenshoots_light/menu_screen.png" width="200" height="400"/> <img src="screenshoots_light/send_docs_screen.png" width="200" height="400"/> <img src="screenshoots_light/view_image_screen.png" width="200" height="400"/>
+
+## Screenshoots (dark mode)
+<img src="screenshoots_dark/login_screen.png" width="200" height="400"/> <img src="screenshoots_dark/menu_screen.png" width="200" height="400"/> <img src="screenshoots_dark/send_docs_screen.png" width="200" height="400"/> <img src="screenshoots_dark/view_image_screen.png" width="200" height="400"/>
