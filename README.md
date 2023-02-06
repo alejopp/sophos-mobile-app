@@ -1,2 +1,20 @@
-# sophos-mobile-challenge
-An app to save and fetch documents from sophos api. Fingerprints, camera and maps are implemented
+# Sophos Mobile App
+
+##Description
+Sophos app is an app that allow users upload documentation required by the company to a webserver. The user will be able to see all documents it has uploaded previously.
+
+## What can you do?
+- Take photos with the default camera and send them to a server.
+- Authenticate with traditional login or biometrics (fingerprint).
+- View the company offices throughout Google Maps.
+- Fill a simple form to upload documents.
+- Visualize the documents a user has sent before.
+- Change the app's language dynamically.
+- Set a light or dark mode
+
+## O.S
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg" width="50" height="50" />
+
+## Programming language
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg" width="70" height="70"/>
+
